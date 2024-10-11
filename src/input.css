@@ -6,8 +6,12 @@
 @tailwind variants;
 
 @layer base{
+    html {
+        @apply scroll-smooth;
+    }
     body {
-        @apply text-whiteColor bg-primaryColor tracking-wider font-oswald
+        @apply text-whiteColor bg-primaryColor tracking-wider font-oswald dark:bg-darkColor  
+        
     }
 
     section {
@@ -41,4 +45,10 @@
     .primary-btn{
         @apply text-blackColor bg-secondaryColor hover:opacity-75;
     }
+}
+
+.tabs-icons ul li:hover ,
+.tabs-icons ul li.active
+{
+@apply bg-secondaryColor text-blackColor ;
 }

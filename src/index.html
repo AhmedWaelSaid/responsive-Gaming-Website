@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html  >
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8" />
@@ -23,23 +23,25 @@
     <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
     <link href="/src/output.css" rel="stylesheet" />
 
-    <title>responsive || burger website</title>
+    <title>responsive || gaming website</title>
 </head>
 
 <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header id="header" class=" bg-primaryColor fixed top-0 left-0 w-full z-50  text-2xl  ">
+    <header id="header" class=" bg-primaryColor dark:bg-darkColor fixed top-0 left-0 w-full z-50  text-2xl pb-4" >
         <nav class="container mx-auto flex justify-between items-center h-auto mt-2 ">
             <div>
                 <span class="text-secondaryColor font-oswald text-3xl">SLANER</span>
             </div>
-            <div id="nav-menu" class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor 
+            <div id="nav-menu" class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor  dark:bg-darkColor border-b border-secondaryColor 
     md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
                 <ul class="flex flex-col text-center gap-5 md:flex-row">
-                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="">Home</a></li>
-                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="">About</a></li>
-                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="">Contact</a></li>
-                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="">Review</a></li>
+                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="#home">Home</a></li>
+                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="#about">About</a></li>
+                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="#games">Games</a></li>
+                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="#review">Review</a></li>
+                    <li><a class="hover:text-secondaryColor ease-in duration-200 nav-link" href="#contact">Contact</a></li>
+                    
 
                 </ul>
                 <i id="closebtn"
@@ -47,7 +49,7 @@
             </div>
             <div class="flex items-center gap-5">
 
-                <i class="ri-moon-fill cursor-pointer ml-8 md:pt-1 text-2xl "></i>
+                <i class="ri-moon-fill cursor-pointer ml-8 md:pt-1 text-2xl " id="toggleicon"></i>
                 <i id="Hamburger" class="ri-menu-line  cursor-pointer ml-4 text-2xl md:hidden"></i>
             </div>
 
@@ -59,9 +61,9 @@
         <section id="home" class="">
             <div class="container flex flex-col items-center gap-10 md:flex-row">
                 <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
-                    <img src="images/1.jpg" alt="" class="w-1/2 mx-auto md:w-full">
+                    <img src="images/1.jpg" alt="" class="w-1/2 mx-auto md:w-full home_image">
                 </div>
-                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5 home__content">
                     <h1 class="home__titles">Safe and Easy Trading</h1>
                     <div class="separator mx-auto"></div>
                     <p class="paragraph">guarantees that all trades are legit and keeps you safe from scammers.
@@ -94,7 +96,7 @@
         <section id="category">
             <div class="container flex flex-col gap-5 w-full md:flex-row">
                 <!-- Card 1  -->
-                <div class="bg-secondaryColor py-4 rounded-lg overflow-hidden flex md:flex-1">
+                <div class="bg-secondaryColor py-4 rounded-lg overflow-hidden flex md:flex-1 category__animate">
                     <div class="basis-1/3 relative">
                         <img src="/src/images/2.jpg" alt="" class="absolute w-28 top-7 h-20 md:h-24 -left-4 rounded-xl">
                     </div>
@@ -107,8 +109,8 @@
                         <a href="#" class="text-blackColor cursor-pointer text-xl">buy online</a>
                     </div>
                 </div>
-                <!-- Card 1  -->
-                <div class="bg-green-700 py-4 rounded-lg overflow-hidden flex md:flex-1">
+                <!-- Card 2  -->
+                <div class="bg-green-700 py-4 rounded-lg overflow-hidden flex md:flex-1 category__animate">
                     <div class="basis-1/3 relative">
                         <img src="/src/images/2.jpg" alt="" class="absolute w-28 top-7 h-20 md:h-24 -left-4 rounded-xl">
                     </div>
@@ -121,8 +123,8 @@
                         <a href="#" class="text-blackColor cursor-pointer text-xl">buy online</a>
                     </div>
                 </div>
-                <!-- Card 1  -->
-                <div class="bg-cyan-700 py-4 rounded-lg overflow-hidden flex md:flex-1">
+                <!-- Card 3  -->
+                <div class="bg-cyan-700 py-4 rounded-lg overflow-hidden flex md:flex-1 category__animate">
                     <div class="basis-1/3 relative">
                         <img src="/src/images/2.jpg" alt="" class="absolute w-28 top-7 h-20 md:h-24 -left-4 rounded-xl">
                     </div>
@@ -140,10 +142,10 @@
 
         <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
         <section id="promo">
-            <div class="container flex flex-col gap-5 mb-5 lg:flex-row lg:gap-10 md:flex-col">
+            <div class="container flex flex-col gap-5 mb-5 lg:flex-row lg:gap-10 md:flex-col ">
 
                 <div
-                    class="bg-primaryColorLight flex flex-col p-6 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    class="bg-primaryColorLight  dark:bg-darkColorLight   flex flex-col p-6 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1  promo-animate1">
                     <img src="/src/images/3.jpg" alt=""
                         class=" w-80 mx-auto  md:mx-5 lg:w-64 rounded-lg hover:animate-movingY">
 
@@ -155,7 +157,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-primaryColorLight flex flex-col p-6 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    class="bg-primaryColorLight  dark:bg-darkColorLight   flex flex-col p-6 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 promo-animate2">
                     <img src="/src/images/3.jpg" alt=""
                         class=" w-80 mx-auto md:mx-5 lg:w-64 rounded-lg hover:animate-movingY">
 
@@ -175,57 +177,444 @@
 
         <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
         <section id="about">
-            <div class="container flex flex-col gap-10 md:flex-row">
+            <div class="container flex flex-col gap-10 md:flex-row about-animate">
                 <div class="flex-1"><img src="/src/images/fotor-ai-2023091535544_5.remini-enhanced.jpg" alt=""
                         class="rounded-lg">
                 </div>
-                <div class="flex-1">
-                    <h2 class=" text-4xl ">FIND FOOD AND DRINKS, ALL-IN-ONE PLACE FOR YOUR BEST TASTE.</h2>
-                    <div class="separator"></div>
-                    <p class="paragraph ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                <div class="flex-1 about-content">
+                    <h2 class=" text-4xl about-content">Join us today to level up your gaming experience!</h2>
+                    <div class="separator about-content"></div>
+                    <p class="paragraph about-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                    <ul class=" grid  grid-cols-2 py-5 space-y-2">
-                        <li class="text-xl text-cyan-100"><i class="fa-solid fa-check text-secondaryColor"></i>
+                    <ul class=" grid  grid-cols-2 py-5 space-y-2 about-content">
+                        <li class="text-xl text-cyan-100 "><i class="fa-solid fa-check text-secondaryColor  "></i>
                             Best Price</li>
-                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check  text-secondaryColor"></i>
+                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check  text-secondaryColor "></i>
                             Fresh Ingredient</li>
-                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check text-secondaryColor"></i>
+                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check text-secondaryColor "></i>
                             Best Service</li>
-                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check  text-secondaryColor"></i>
+                        <li  class="text-xl text-cyan-100"><i class="fa-solid fa-check  text-secondaryColor "></i>
                             Best Boosting </li>
                     </ul>
-                    <a href="" class="btn primary-btn text-xl">About Us</a>
+                    <a href="" class="btn primary-btn text-xl about-content">About Us</a>
                 </div>
             </div>
         </section>
 
         <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
-        <section id="menu">
+        <section id="games">
+       <div class="container mw-md mx-auto  ">
 
+        <div>
+         <h2 class="text-4xl text-center games-animate">OUR BEST GAMES
+         </h2>
+         <div class="separator mx-auto games-animate"></div>
+         <p class="paragraph text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+             Aenean commodo ligula eget dolor. Aenean massa.</p>
+         <div class="tabs-icons">
+             <ul class="flex flex-wrap justify-center gap-3 py-10 games-list">
+                 <li data-tabs="all" class="bg-primaryColorLight text-xl tracking-wider py-5 px-10 font-semibold rounded-lg active cursor-pointer   dark:bg-darkColorLight">All</li>
+                 <li data-tabs="Accounts" class="bg-primaryColorLight text-xl tracking-wider py-5 px-10 font-semibold rounded-lg cursor-pointer  dark:bg-darkColorLight">Accounts</li>
+                 <li data-tabs="Currencies" class="bg-primaryColorLight text-xl tracking-wider py-5 px-10 font-semibold rounded-lg cursor-pointer  dark:bg-darkColorLight">Currencies</li>
+                 <li data-tabs="Items" class="bg-primaryColorLight text-xl tracking-wider py-5 px-10 font-semibold rounded-lg cursor-pointer  dark:bg-darkColorLight">Items</li>
+             </ul>
+         </div>
+        </div>
+        <div>
+            <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 games-list">
+                <!-- Accounts -->
+                <li class="All-Games Accounts">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/3200915-ig-shadowofwar-20170227.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li  class="All-Games Accounts">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/red_dead_redemption_2_cover_art_1.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li  class="All-Games Accounts">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/7230960-metro-exodus-windows-apps-front-cover.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Accounts">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/Doom.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Currencies -->
+                <li class="All-Games Currencies">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/assassins-creed-origins-cover-i49105.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Currencies">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/EGS_DyingLight2StayHuman_Techland_S4_1200x1600-b3d66b4576fd6488b674710e13493435.jpeg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Currencies">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/ENT-05_SEKIRO-SHADOWS_DIE_TWICE_BG000142.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Currencies">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/Dishonored-2_featured.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Items -->
+                <li class="All-Games Items">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/elderscrollsvi-ign-1638841050781.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Items">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/10840457.jpeg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Items">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/6110RSDn3PL.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="All-Games Items">
+                    <div class=" grid place-items-center lg:w-60 md:w-50 bg-primaryColorLight rounded-3xl  dark:bg-darkColorLight dark:hover:bg-secondaryColor hover:bg-secondaryColor ease-linear duration-200 lg:h-56">
+                        <img src="/src/images/Dishonored-2_featured.jpg" alt="" class="rounded-2xl sm:h-56  px-10  hover:scale-110 ease-linear duration-200 py-4 lg:w-40 lg:h-48 md:w-60 lg:p-0  md:py-2  ">
+                    </div>
+                    <div class="pt-5">
+                        <div class="mb-2">
+                            <h4 class="card__title">REGULAR BEEF BURGER</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-secondaryColor">$42.00</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       </div>
         </section>
 
         <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
-        <section id="review">
-
+        <section id="review" class="bg-primaryColorLight py-20 dark:bg-darkColorLight ">
+    <div class="container mb-16 review-animate">
+        <div>
+            <h2 class="text-4xl text-center">CUSTOMER REVIEW
+            </h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor. Aenean massa.</p>
+           </div>
+           <div class="swiper py-10">
+            <ul class="swiper-wrapper cursor-pointer">
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5  dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5 dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5  dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5  dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5  dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="flex flex-col p-6 rounded-lg bg-primaryColor gap-5  dark:bg-darkColor">
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Veritatis quibusdam dicta eius harum eos enim repellat mollitia.</p>
+                            <div class=" flex items-center">
+                                <img src="/src/images/owner.png" alt="" class="w-12 h-12  rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase text-2xl">SlaneR Dee</p>
+                                    <p class="text-sm">Pro Gamer</p>
+                                </div>
+                                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+           </div>
+    </div>
         </section>
 
         <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
-        <section id="contact">
-
+        <section id="contact" class="bg-secondaryColor py-16 mt-0">
+            <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+                <div class="space-y-4 md:flex-1">
+                <h2 class=" text-4xl font-extrabold text-blackColor">GET EXCLUSIVE UPDATE</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+                <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                <input type="email" placeholder="Email address" class="p-2 text-blackColor rounded-lg outline-none md:w-full">
+                <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75" >
+                    <i class="fa-solid fa-paper-plane"></i>
+                Subscribe
+                </a>
+                </div>
+                </div>
         </section>
     </main>
     <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
     <footer>
-        <section class="footer">
-
+        <section class="footer  mb-20">
+        <div class="container">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5  md:grid-cols-2 lg:grid-cols-4"> 
+            <li>
+        <div class="space-y-3">
+        <a href="" class="text-4xl font-oswald uppercase">
+            <span class="text-secondaryColor ">SLANER</span>
+        </a>
+       
+        <p class="text-xs">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloremque ad suscipit, quae non mollitia similique et!
+        </p>
+        </div>
+        </li>
+        <li >
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+              <a href="#" class="text-xs hover:text-secondaryColor">Help Center</a>
+              <a href="#" class="text-xs hover:text-secondaryColor">Bug Bounty</a>
+              <a href="#" class="text-xs hover:text-secondaryColor">Articles</a>
+              <a href="#" class="text-xs hover:text-secondaryColor">Refund Policy</a>
+            </div>
+          </li>
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald mt-2 inline-block">phone</h3>
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                +1 000 000 0000
+              </p>
+            </div>
+          
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald mt-2 inline-block">email</h3>
+              <p class="flex items-center  gap-2 text-xs space-y-2 ">
+                <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                SlaneR.info@email.com
+              </p>
+            </div>
+          
+          </li>
+          <li>
+            <div class="space-y-2 ">
+                <h3 class="text-lg uppercase font-oswald mt-2 inline-block">ADDRESS</h3>
+                <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                    Address goes here
+                </p>
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-lg uppercase font-oswald mt-3 inline-block">Follow us</h3>
+                <div class="space-x-2 flex flex-row gap-2">
+                    <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200 "></i>
+                    <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  </div>
+              </div>
+          </li>
+        </ul>
+        <div class="flex flex-col items-center border-t border-whiteColor dark:border-secondaryColor py-5 md:justify-around ">
+            <p class="text-sm">Gaming website by Ahmed Wael</p>
+            <p class="text-sm">Copyright © 2024. All rights reserved.</p>
+          </div>
+        </div>
         </section>
-    </footer>
+        </footer>
 
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
-
+    <a href="#" class="fixed  right-4  -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg
+     text-blackColor z-50 hover:-translate-y-1 ease-in duration-300 animate-bounce" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            speed: 500,
+            spaceBetween: 100,
+            autoplay: {
+            delay:3000,
+    disableOnInteraction:false ,
+    on: {
+    setTransition: function (swiper, transition) {
+      swiper.slides.forEach(slide => {
+        slide.style.transitionDuration = `1000ms`; // تأخير لمدة 1 ثانية
+      });
+    }
+  }
+   
+   
+ },
+ breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      
+    },
+    // when window width is >=1024px
+    1024: {
+      slidesPerView: 3,
+      
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable : true ,
+    grabcursor : true
+  },
+
+
+});
+    </script>
 
     <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
     <script src="https://unpkg.com/scrollreveal"></script>
